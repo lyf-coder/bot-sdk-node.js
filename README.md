@@ -1,4 +1,13 @@
-# 度秘BOT SDK for nodejs
+# 项目说明
+
+原项目地址：https://github.com/dueros/bot-sdk-node.js.git
+因为原项目只更新了代码却没有发布出去，所以只能fork出来，重新发布为：`dueros-bot-sdk`
+
+并做了一些更改（主要是支持`ts`）：
+* 使用 https://github.com/jiyeking/js2dts.git 工具（该工具需要本地安装使用npm link 方式以支持传入目录作为参数，有python脚本可合并文件） 生成了 `index.d.ts`文件
+* 使用 [create_index_export_js.py](./create_index_export_js.py) 生成 `index.js` 作为模块导出文件。
+
+## 度秘BOT SDK for nodejs
 这是一个帮助开发Bot的SDK，我们强烈建议您使用这个SDK开发度秘的Bot。当然，您可以完全自己来处理DuerOS的协议，自己完成session、nlu、result的处理，但是度秘的DuerOS对BOT的协议会经常进行升级，这样会给您带来一些麻烦。这个SDK会与DuerOS的协议一起升级，会最大限度减少对您开发bot的影响。
 
 ## 通过bot-sdk可以快速的开发bot

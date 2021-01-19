@@ -22,5 +22,8 @@
 'use strict';
 
 let Bot = require('./lib/Bot');
+let Session = require('./lib/Session');
 
-module.exports = Bot;
+module.exports = {
+    Bot,Session
+};
